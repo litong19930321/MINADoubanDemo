@@ -1,0 +1,17 @@
+<loading hidden = "{{!loading}}">
+拼命加载中...
+</loading>
+<scroll-view class = "scrollview" scroll-y = "true">
+    <view class = "meta">
+        <!--电影大图-->
+        <image class="poster" src = "{{movieDetail.images.large}}" background-size = "cover"></image>
+        <text class = "title">{{movieDetail.title}}({{movieDetail.year}})</text>
+        <text class = "info">评分：{{movieDetail.rating.average}}</text>
+        <text class = "info">导演：<block wx:for= "{{movieDetail.directors}}">{{item.name + " "}}</block></text>
+        <text class = "info">主演：<block wx:for= "{{movieDetail.casts}}">{{item.name + " "}}</block></text>
+    </view>
+    <view class = "summary">
+        <text class = "label">摘要</text>
+        <text class = "content">{{movieDetail.summary}}</text>
+    </view>
+</scroll-view>

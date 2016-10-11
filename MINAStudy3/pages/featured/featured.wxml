@@ -1,0 +1,29 @@
+<!--微信提供的加载提示组件 loading-->
+<loading hidden = "{{!loading}}">
+拼命加载中...
+</loading>
+<view class = "page-header">
+    <text class = "page-header-text">{{title}}</text>
+</view>
+<!--可滚动视图组件  scroll-view-->
+<scroll-view scroll-y = "true" class = "page-body" bindscrolltolower = "loadMore">
+<!--for使用方法可参照微信的  wx:for方法
+在组件上使用wx:for控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。
+默认数组的当前项的下标变量名默认为index，数组当前项的变量名默认为item-->
+<!--url路径后面 ../movie/movie的？后面是参数，在movie页面中 可以获取其中的参数-->
+    <navigator url = "../movie/movie?id={{item.id}}&title={{item.title}}" wx:for = "{{movies}}">
+        <view class = "item">
+        <image class = "poster" src = "{{item.images.small}}"></image>
+        <view class="meta">
+            <text class = "title">{{item.title}}</text>
+            <text class = "subtitle">{{item.original_title}}</text>
+            <view class = "artists">
+                <text wx:for="{{item.directors}}">{{item.name}}</text>
+            </view>
+        </view>
+        <view class = "rating">
+            <text>{{item.rating.average}}</text>
+        </view>
+        </view>
+    </navigator>
+</scroll-view>

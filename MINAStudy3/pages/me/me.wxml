@@ -1,0 +1,10 @@
+<view class = "container">
+    <view class = "usertitle">
+         <text class = "user-title">{{title}}</text>
+    </view>
+    <view class = "userinfo">
+        <image class = "userinfo-qrcode" src = "{{userInfo.qrCode}}" background-size="cover"></image>
+        <text class = "userinfo-nickname">{{userInfo.nickname}}</text>
+        <text class = "userinfo-realname">{{userInfo.realname}}</text>
+    </view>
+</view>

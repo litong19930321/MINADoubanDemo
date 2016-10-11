@@ -1,0 +1,24 @@
+<loading hidden = "{{!loading}}">
+拼命搜索中...
+</loading>
+<view class = "page-header">
+<!--auto-focus 自动获取聚焦-->
+    <input class = "page-header-text" placeholder = "请输入电影关键词"   bindchange = "search"></input>
+</view>
+<scroll-view scroll-y = "true" class = "page-body">
+    <navigator url = "../movie/movie?id={{item.id}}" wx:for = "{{movies}}">
+        <view class = "item">
+            <image class = "poster" src = "{{item.images.small}}"></image>
+             <view class = "meta">
+                 <text class = "title">{{item.title}}</text>
+                 <text class = "subtitle">{{item.original_title}}({{item.year}})</text>
+                 <view class = "artists">
+                     <text wx:for = "{{item.directors}}">{{item.name}}</text>
+                 </view>
+             </view>
+             <view class = "rating">
+                 <text>{{item.rating.average}}</text>
+             </view>
+        </view>
+    </navigator>
+</scroll-view>

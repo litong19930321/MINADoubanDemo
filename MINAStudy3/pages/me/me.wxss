@@ -1,0 +1,39 @@
+.container{
+    height: 100%;
+    background-color: papayawhip;
+    /*布局方式为弹性布局*/
+    display: flex;
+    /*colum 灵活的项目将垂直显示，正如一个列一样*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0rpx;
+    /*box-sizing: border-box;*/
+}
+.usertitle{
+    color: #aaa;
+    margin-top: 100rpx;
+}
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rpx;
+}
+
+.userinfo-qrcode{
+    width: 530rpx;
+    height: 510rpx;
+    margin: 50rpx 10rpx 10rpx 20rpx;
+}
+
+.userinfo-nickname{
+    color: #aaa;
+    margin-top: 50rpx;
+}
+
+.userinfo-realname{
+    color: #000;
+    margin-top: 20rpx;
+}
+

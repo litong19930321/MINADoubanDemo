@@ -1,0 +1,70 @@
+/*全局的 类似与css的文件*/
+/*微信规定了整个屏幕宽度为750rpx 所以使用rpx单位后 程序能够根据屏幕宽度自适应 参照 框架 -> WXSS*/
+page{
+  font-family: 'Microsoft YaHei';
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc;
+  margin-bottom: 0rpx;
+}
+
+.page-header-text{
+  padding: 20rpx 40rpx;
+  color: #02AF00;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.page-body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.item{
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.item .poster{
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+/*flex:1 所有子元素都有相同的长度  忽略他们的内容*/
+.item .meta{
+  flex: 1;
+}
+
+.item .meta .title,
+.item .meta .subtitle{
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.item .meta .title{
+  font-size: 32rpx;
+}
+
+.item .meta .subtitle{
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+
+.item .meta .artists{
+  font-size: 26rpx;
+  color: #999;
+}
+.item .rating{
+  font-size:28rpx;
+  font-weight: bold;
+  color: #f73c31;
+}
