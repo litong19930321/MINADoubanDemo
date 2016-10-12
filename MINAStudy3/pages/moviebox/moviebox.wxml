@@ -12,7 +12,7 @@
             <view class = "meta">
                 <text class = "title">{{item.subject.title}}</text>
                 <text class = "subtitle">{{item.subject.original_title}}({{item.subject.year}})</text>
-                <view class = "artists">
+                <view class="artists">
                     <text wx:for="{{item.subject.directors}}">{{item.name}}</text>
                 </view>
             </view>
