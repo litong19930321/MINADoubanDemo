@@ -24,4 +24,5 @@
 - 程序中写了比较多的注释，简单易懂
 - 小程序中大量使用了flex布局，可以参考这篇博文[《微信小程序开发：Flex布局》](http://www.jianshu.com/p/f82262002f8a/comments/4720426#comment-4720426)
 - [微信小程序的开发文档](https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474643026176)
+- 本程序接口来自[豆瓣API开发这网站](https://developers.douban.com/wiki/?title=guide)
 
