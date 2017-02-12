@@ -15,7 +15,7 @@
 <img src="https://github.com/litong19930321/MINADoubanDemo/blob/master/3.png" width="320px" />
 <img src="https://github.com/litong19930321/MINADoubanDemo/blob/master/4.png" width="320px" />
 
-其中前3个界面点进去的2级界面如下
+其中前3个界面点进去的2级界面如下:
 
 
 <img src="https://github.com/litong19930321/MINADoubanDemo/blob/master/1-1.png" width="320px" />
